@@ -1,6 +1,6 @@
 package com.example.factory;
 
-import javafx.scene.control.Alert;
+
 
 public class AmmoFactory {
 
@@ -15,19 +15,25 @@ public class AmmoFactory {
         return AmmoFactory.instance;
     }
 
-    public Alert createAlert(Alert.AlertType type, String title, String headerText, String contentText){
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(headerText);
-        alert.setContentText(contentText);
-        return alert;
+    public Ammo createAmmo(String calibro, String colour, String rage ){
+        Ammo ammo = new Ammo();
+        ammo.setCalibro(calibro);
+        ammo.setColour(colour);
+        ammo.setRage(rage);
+        return ammo;
     }
 
-    public Alert createAlert(Alert.AlertType type, String title, String headerText){
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(headerText);
-        return alert;
+    public Ammo createAmmo(String calibro ){
+        Ammo ammo = new Ammo();
+        ammo.setCalibro(calibro);
+        return ammo;
+    }
+
+    public Ammo createAmmo(String calibro, String colour ){
+        Ammo ammo = new Ammo();
+        ammo.setCalibro(calibro);
+        ammo.setColour(colour);
+        return ammo;
     }
 
 }
