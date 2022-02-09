@@ -20,17 +20,14 @@ public class Start extends Application {
     @FXML
     public void createAmmo1(){
         AmmoFactory.getInstance().createAmmo("9","black","20");
-        //("Ammo have been created" );
     }
     @FXML
     public void createAmmo2(){
         AmmoFactory.getInstance().createAmmo("9");
-        //("Ammo have been created" );
     }
     @FXML
     public void createAmmo3(){
         AmmoFactory.getInstance().createAmmo("45", "gold");
-        //("Ammo have been created" );
     }
 
     public static void main(String[] args) {
